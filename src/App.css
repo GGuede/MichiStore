@@ -1,0 +1,131 @@
+*{
+  
+  box-sizing: border-box;
+  
+}
+.divContent{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  box-sizing: border-box;
+  grid-template-areas: 
+  "header carrito"
+  "main main"
+  "footer footer";
+  grid-template-rows: 1fr 4fr 1fr;
+  grid-template-columns: 4fr 1fr;
+}
+.header{
+  background-color: rgba(139, 58, 21, 0.998);
+  display:flex;
+  grid-area: header;
+  width: 100%;
+  height: 10rem;
+}
+.divNavHead{
+  display: flex;
+  width: 100%;
+  height: 10rem;
+}
+.divLogo{
+  height: 10rem;
+  margin-left: 2rem;
+}
+.logo{
+  display: flex;
+  align-self: flex-start;
+  width: 12rem;
+  height: 100%;
+  padding: 0.3rem;
+  margin: 0.1rem;
+}
+.divCategorias{
+  display: flex;
+  justify-content: center;
+  margin-left: 15rem;
+}
+.categorias{
+  list-style-type: none;
+  align-self: flex-start;
+  display: flex;
+}
+.liCategorias{
+  justify-content: center;
+  margin-left: 5rem;
+  margin-top: 4rem;
+}
+.textNavbar{
+  display:flex;
+  color: rgb(251, 251, 251);
+  font-family: cursive;
+  font-size: 1.8rem;
+  transition: all 0.4s ease;
+            border: white;
+            &:hover{
+                transform: scale(1.1,1.1);
+  }
+}
+.textNavbar:hover{
+  transform: scale(1.1, 1.1);
+  height: auto;
+}
+h1{
+  align-self: self-end;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  font-size: 2rem;
+  color: aliceblue;
+}
+
+.navHead{
+  height: 10rem;
+  background-color: rgba(139, 58, 21, 0.998);
+}
+.listaHead{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+}
+/* --------------------------------------CarWidget-------------------------------------------------------------- */
+.divButton{
+  display: flex;
+  grid-area: carrito;
+  background-color: rgba(139, 58, 21, 0.998);
+}
+.myBoton{
+  width: 5rem;
+  height: 4rem;
+  display: flex;
+  background-color: rgba(139, 58, 21, 0.998);
+  color: #ffffff;
+  transition: all 0.4s ease;
+  border: white;
+  margin-left: 13rem;
+  margin-top: 5.5rem;
+  &:hover{
+      transform: scale(1.1,1.1);
+  }
+}
+.botonCarrito{
+  width: 5rem;
+  height: 3rem;
+  color: #ffffff;
+}
+/* ---------------------------------------------ItemListContainer--------------------------------------------------- */
+.main{
+  display: flex;
+  grid-area: main;
+  align-items: flex-start;
+  justify-content: center;
+}
+.divMain{
+  align-items: center;
+}
