@@ -1,4 +1,5 @@
 import img1 from '../Image/LogoIzq.png';
+import CarWidget from './carWidget.jsx'
 
 function Navbar () {
     return(
@@ -16,6 +17,7 @@ function Navbar () {
                             <li class="liCategorias"><p class="textNavbar">Limpieza</p></li>
                         </ul>
                     </div>
+                    <CarWidget></CarWidget>
                 </div>
             </nav>
         </header>
