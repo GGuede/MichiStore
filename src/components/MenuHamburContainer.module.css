@@ -1,0 +1,36 @@
+.hambur {
+	height: 5rem;
+	align-self: center;
+	width: 5rem;
+	margin-left: 1rem;
+	background-color: rgba(139, 58, 21, 0.998) !important;
+	border-color: rgba(139, 58, 21, 0.998) !important;
+}
+
+.listHambur {
+	list-style: none;
+	padding: 0;
+	text-align: left;
+}
+
+.listHambur li {
+	margin: 10px 0;
+}
+
+.listHambur li a {
+	text-decoration: none;
+	font-size: 1.5rem;
+	color: #333;
+	display: inline-block;
+	padding: 10px 15px;
+	transition: all 0.3s ease-in-out;
+	border-radius: 5px;
+	width: 29rem;
+}
+
+.listHambur li a:hover {
+	background-color: rgba(139, 58, 21, 0.998);
+	color: white;
+	transform: scale(1.1);
+	width: 29rem;
+}

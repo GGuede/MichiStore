@@ -1,137 +1,116 @@
 /* --------------------------------------------------NavBar----------------------------------------------------------------------------------- */
-*{
-  
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
-body{
-  margin: 0;
-  place-items: baseline;
+body {
+	margin: 0;
+	place-items: baseline;
 }
-.divContent{
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
+.divContent {
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
 }
-.header{
-  background-color: rgba(139, 58, 21, 0.998);
-  display:flex;
-  width: 100%;
-  justify-content: space-evenly;
+.divCategorias {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 1rem;
 }
-.navHead{
-  width: 100%;
-  background-color: rgba(139, 58, 21, 0.998);
+.categorias {
+	list-style-type: none;
+	align-self: flex-start;
+	display: flex;
+	gap: 40px;
 }
-
-.divNavHead{
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: flex-end;
+.liCategorias {
+	justify-content: center;
 }
-
-.logo{
-  display: flex;
-  align-self: flex-start;
-  width: 9rem;
-  height: auto;
-  padding: 0.3rem;
-  margin: 0.1rem;
+.textNavbar {
+	display: flex;
+	color: rgb(251, 251, 251);
+	font-family: cursive;
+	font-size: 1.8rem;
+	transition: all 0.4s ease;
+	border: white;
+	&:hover {
+		transform: scale(1.1, 1.1);
+	}
 }
-.divCategorias{
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1rem;
+.textNavbar:hover {
+	transform: scale(1.1, 1.1);
+	height: auto;
 }
-.categorias{
-  list-style-type: none;
-  align-self: flex-start;
-  display: flex;
-  gap: 40px;
-}
-.liCategorias{
-  justify-content: center;
-}
-.textNavbar{
-  display:flex;
-  color: rgb(251, 251, 251);
-  font-family: cursive;
-  font-size: 1.8rem;
-  transition: all 0.4s ease;
-            border: white;
-            &:hover{
-                transform: scale(1.1,1.1);
-  }
-}
-.textNavbar:hover{
-  transform: scale(1.1, 1.1);
-  height: auto;
-}
-h1{
-  align-self: self-end;
-  width: 0;
-  height: 0;
-  overflow: hidden;
-  padding: 0;
-  margin: 0;
-  text-align: left;
-  font-size: 2rem;
-  color: aliceblue;
+h1 {
+	align-self: self-end;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	text-align: left;
+	font-size: 2rem;
+	color: aliceblue;
 }
 
-.listaHead{
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 1rem;
+.listaHead {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 1rem;
 }
 /* --------------------------------------CarWidget-------------------------------------------------------------- */
-.divButton{
-  width: 137px;
-  display: flex;
-  background-color: rgba(139, 58, 21, 0.998);
-  margin-bottom: 1rem;
-  margin-right: 1rem;
-  justify-content: right
+.divButton {
+	width: 137px;
+	display: flex;
+	background-color: rgba(139, 58, 21, 0.998);
+	margin-bottom: 1rem;
+	margin-right: 1rem;
+	justify-content: right;
 }
-.myBoton{
-  width: 5rem;
-  height: 4rem;
-  display: flex;
-  background-color: rgba(139, 58, 21, 0.998);
-  color: #ffffff;
-  transition: all 0.4s ease;
-  border: white;
-  &:hover{
-      transform: scale(1.1,1.1);
-  }
+.myBoton {
+	width: 5rem;
+	height: 4rem;
+	display: flex;
+	background-color: rgba(139, 58, 21, 0.998);
+	color: #ffffff;
+	transition: all 0.4s ease;
+	border: white;
+	&:hover {
+		transform: scale(1.1, 1.1);
+	}
 }
-.botonCarrito{
-  width: 5rem;
-  height: 3rem;
-  color: #ffffff;
+.botonCarrito {
+	width: 5rem;
+	height: 3rem;
+	color: #ffffff;
 }
 /* ---------------------------------------------ItemListContainer--------------------------------------------------- */
-.main{
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
+.main {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
 }
-.divMain{
-  align-items: center;
+.divMain {
+	align-items: center;
 }
+/* ----------------------------------------------Item------------------------------------------------------------- */
+.carta {
+	height: 29rem !important;
+}
+
 /* ----------------------------------------------Media Query------------------------------------------------------------- */
-@media (max-width:600px){
-  .divContent{ grid-template-areas: 
-    "header carrito"
-    "main main"
-    "footer footer";
-  grid-template-rows: 1fr 4fr 1fr;
-  grid-template-columns: 4fr 1fr;}
+@media (max-width: 600px) {
+	.divContent {
+		grid-template-areas:
+			"header carrito"
+			"main main"
+			"footer footer";
+		grid-template-rows: 1fr 4fr 1fr;
+		grid-template-columns: 4fr 1fr;
+	}
 }

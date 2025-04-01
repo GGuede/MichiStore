@@ -1,0 +1,26 @@
+.header {
+	background-color: rgba(139, 58, 21, 0.998);
+	display: flex;
+	width: 100%;
+	justify-content: space-evenly;
+}
+.navHead {
+	width: 100%;
+	background-color: rgba(139, 58, 21, 0.998);
+}
+
+.divNavHead {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.logo {
+	display: flex;
+	align-self: flex-start;
+	width: 9rem;
+	height: auto;
+	padding: 0.3rem;
+	margin: 0.1rem;
+}
