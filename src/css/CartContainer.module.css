@@ -1,0 +1,43 @@
+.img {
+	width: 50px;
+	height: 50px;
+	object-fit: cover;
+	border-radius: 8px;
+	margin-right: 10px;
+}
+.divCartContainer {
+	display: flex;
+	align-items: center;
+	margin-bottom: 1rem;
+	width: 100%;
+	max-width: 500px;
+	gap: 10px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 0.5rem;
+}
+.divNoTienesProductos {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 60vh;
+	text-align: center;
+}
+.divCarrito {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2rem;
+}
+.total {
+	margin-top: 2rem;
+}
+.botonVaciarCarrito,
+.botonCheckout {
+	padding: auto;
+}
+
+.botonesContainer {
+	display: flex;
+	gap: 1rem;
+	margin-top: 1.5rem;
+}

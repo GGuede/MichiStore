@@ -1,12 +1,42 @@
-# React + Vite
+# 🛍️ MichiStore
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es un proyecto de e-commerce desarrollado con **React** que permite mostrar productos, gestionar un carrito de compras y finalizar órdenes de compra, todo conectado con **Firebase** para la gestión de datos.
 
-Currently, two official plugins are available:
+## 🚀 Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-   🔍 **Listado de productos**: Los productos se obtienen desde una base de datos en Firebase y se muestran en la interfaz de forma dinámica.
+-   🧰 **Filtros por categoría**: Los usuarios pueden filtrar los productos por distintas categorías.
+-   🛒 **Carrito de compras**:
+    -   Agregar productos
+    -   Eliminar productos
+    -   Modificar la cantidad de productos
+    -   Ver el total del carrito
+    -   Vaciar el carrito
+-   🧾 **Finalizar compra**: El usuario completa un formulario con sus datos y se genera una orden de compra.
+-   📦 **Gestión de órdenes**: La información del pedido se guarda en Firebase.
 
-## Expanding the ESLint configuration
+## 🧑‍💻 Tecnologías utilizadas
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+-   [React](https://reactjs.org/) - Librería principal para la construcción de la UI
+-   [React Router](https://reactrouter.com/) - Enrutamiento entre páginas
+-   [Firebase](https://firebase.google.com/) - Backend (Base de datos, almacenamiento de órdenes)
+-   [React Bootstrap](https://react-bootstrap.github.io/) & [Bootstrap Icons](https://icons.getbootstrap.com/) - Estilado y componentes UI
+-   [React Toastify](https://fkhadra.github.io/react-toastify/) - Notificaciones
+-   [SweetAlert2](https://sweetalert2.github.io/) - Alertas personalizadas
+
+## 📦 Dependencias
+
+```json
+{
+	"bootstrap": "^5.3.3",
+	"bootstrap-icons": "^1.11.3",
+	"firebase": "^11.6.0",
+	"react": "^19.1.0",
+	"react-bootstrap": "^2.10.9",
+	"react-dom": "^19.1.0",
+	"react-router": "^7.4.1",
+	"react-toastify": "^11.0.5",
+	"sweetalert2": "^11.6.13",
+	"sweetalert2-react-content": "^5.1.0"
+}
+```

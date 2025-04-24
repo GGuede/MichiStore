@@ -64,26 +64,7 @@ h1 {
 	margin-left: 1rem;
 }
 /* --------------------------------------CarWidget-------------------------------------------------------------- */
-.divButton {
-	width: 137px;
-	display: flex;
-	background-color: rgba(139, 58, 21, 0.998);
-	margin-bottom: 1rem;
-	margin-right: 1rem;
-	justify-content: right;
-}
-.myBoton {
-	width: 5rem;
-	height: 4rem;
-	display: flex;
-	background-color: rgba(139, 58, 21, 0.998);
-	color: #ffffff;
-	transition: all 0.4s ease;
-	border: white;
-	&:hover {
-		transform: scale(1.1, 1.1);
-	}
-}
+
 .botonCarrito {
 	width: 5rem;
 	height: 3rem;
@@ -101,16 +82,4 @@ h1 {
 /* ----------------------------------------------Item------------------------------------------------------------- */
 .carta {
 	height: 29rem !important;
-}
-
-/* ----------------------------------------------Media Query------------------------------------------------------------- */
-@media (max-width: 600px) {
-	.divContent {
-		grid-template-areas:
-			"header carrito"
-			"main main"
-			"footer footer";
-		grid-template-rows: 1fr 4fr 1fr;
-		grid-template-columns: 4fr 1fr;
-	}
 }

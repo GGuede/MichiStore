@@ -1,0 +1,41 @@
+.button {
+	background-color: rgba(139, 58, 21, 0.998);
+	color: white;
+	border: none;
+	padding: 10px 15px;
+	border-radius: 5px;
+	font-size: 1.2rem;
+	cursor: pointer;
+	margin-top: 15px;
+	transition: 0.3s;
+}
+.divCount {
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.buttonMenos {
+	background-color: rgba(177, 2, 2, 0.998);
+	color: white;
+	border: none;
+	padding: 10px 17px;
+	border-radius: 5px;
+	font-size: 1.2rem;
+	cursor: pointer;
+	margin-top: 15px;
+	transition: 0.3s;
+}
+
+.buttonMas {
+	background-color: rgba(1, 99, 9, 0.998);
+	color: white;
+	border: none;
+	padding: 10px 15px;
+	border-radius: 5px;
+	font-size: 1.2rem;
+	cursor: pointer;
+	margin-top: 15px;
+	transition: 0.3s;
+}

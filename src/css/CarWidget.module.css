@@ -1,0 +1,26 @@
+.myBoton {
+	width: 5rem;
+	height: 4rem;
+	display: flex;
+	background-color: rgba(139, 58, 21, 0.998);
+	color: #ffffff;
+	transition: all 0.4s ease;
+	border: white;
+	&:hover {
+		transform: scale(1.1, 1.1);
+	}
+}
+.divButton {
+	width: 137px;
+	display: flex;
+	background-color: rgba(139, 58, 21, 0.998);
+	margin-bottom: 1rem;
+	margin-right: 1rem;
+	justify-content: right;
+}
+
+.botonCarrito {
+	width: 5rem;
+	height: 3rem;
+	color: #ffffff;
+}

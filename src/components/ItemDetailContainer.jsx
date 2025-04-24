@@ -1,16 +1,14 @@
 import { useParams } from "react-router";
 import { useState, useEffect } from "react";
 import ItemDetail from "./ItemDetail";
-import Card from "react-bootstrap/Card";
+import { getItem } from "../firebase/db";
 
 function ItemDetailContainer() {
 	const [detail, setDetail] = useState();
 	const { id } = useParams();
 
 	useEffect(() => {
-		fetch(`https://dummyjson.com/products/${id}`)
-			.then((res) => res.json())
-			.then((prod) => setDetail(prod));
+		getItem(id).then((item) => setDetail(item));
 	}, [id]);
 
 	return (

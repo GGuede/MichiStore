@@ -1,22 +1,43 @@
-import Nav from "react-bootstrap/Nav";
-import { useEffect, useState } from "react";
+import { NavLink } from "react-router";
+import Button from "react-bootstrap/Button";
+import Offcanvas from "react-bootstrap/Offcanvas";
+import styles from "../css/MenuHamburguesa.module.css";
 
-function MenuHamburguesa() {
-	const [categories, setCategories] = useState([]);
+function MenuHamburguesa({ categories, handleShow, handleClose, show }) {
+	return (
+		<>
+			<Button
+				className={styles.hambur}
+				variant="primary"
+				onClick={handleShow}
+			>
+				<i className="bi bi-list fs-1"></i>
+			</Button>
 
-	useEffect(() => {
-		fetch("https://dummyjson.com/products/category-list")
-			.then((res) => res.json())
-			.then((cat) => setCategories(cat));
-	}, []);
-
-	{
-		categories.map((cat) => (
-			<Nav.Link href="" key={cat}>
-				{cat}
-			</Nav.Link>
-		));
-	}
+			<Offcanvas show={show} onHide={handleClose}>
+				<Offcanvas.Header closeButton>
+					<Offcanvas.Title>Categorías</Offcanvas.Title>
+				</Offcanvas.Header>
+				<Offcanvas.Body>
+					<ul className={styles.listHambur}>
+						{categories.map((cat) => (
+							<li key={cat}>
+								<NavLink
+									to={`/category/${cat}`}
+									className={({ isActive }) =>
+										isActive ? styles.activeLink : ""
+									}
+									onClick={handleClose}
+								>
+									{cat}
+								</NavLink>
+							</li>
+						))}
+					</ul>
+				</Offcanvas.Body>
+			</Offcanvas>
+		</>
+	);
 }
 
 export default MenuHamburguesa;

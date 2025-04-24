@@ -1,7 +1,6 @@
 import { Card } from "react-bootstrap";
-import "./ItemDetails.module.css";
-import styles from "./ItemDetails.module.css";
-import ItemCount from "./ItemCount";
+import styles from "../css/ItemDetails.module.css";
+import ItemCountContainer from "./ItemCountContainer";
 
 function ItemDetail({ detail }) {
 	return (
@@ -9,20 +8,17 @@ function ItemDetail({ detail }) {
 			<Card className={styles.card}>
 				<Card.Img
 					variant="top"
-					src={detail?.thumbnail}
+					src={detail?.image}
 					className={styles.image}
 				/>
 				<Card.Body>
 					<Card.Title className={styles.title}>
-						{detail?.title}
+						{detail?.name}
 					</Card.Title>
 					<Card.Text className={styles.text}>
 						{detail?.category}
 					</Card.Text>
-					<button className={styles.button}>
-						Agregar al carrito
-					</button>
-					<ItemCount />
+					<ItemCountContainer product={detail} />
 				</Card.Body>
 			</Card>
 		</div>
